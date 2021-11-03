@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/css.css">
+  </head>
+<body id="body" onload="javascript:autoscroll()">
+<a href="index.html">
+<img class="logo" alt="topspice" src="images/yarrducks2.png" >
+</a>
+<header class="topnav">
+	<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About Us</a></li>
+	<li><a href="rewards.html">Rewards</a></li>
+	<div class="dropdown">
+	
+		<button class="dropbtn">
+		
+		<a class="active" href="menu.html">Menu ↓</a>
+		<i class="fa fa-caret-down"></i>
+		</button>
+		
+		<div class="dropdown-content">
+			<a href="#drinks">Drinks</a>
+			<a href="#food">Food</a>
+		</div>
+		
+     </div> 
+	<li><a href="order.html">Orders</a></li>
+	</ul>
+</header>
+
+<div id="divbody" class="maincontent" >
+<br><br><br><br>
+    <div class="slidershow middle">
+      <div class="slides">
+        <input oninput="slideno=1" type="radio" name="img" id="r1">
+        <input oninput="slideno=2" type="radio" name="img" id="r2">
+        <input oninput="slideno=3" type="radio" name="img" id="r3">
+        <input oninput="slideno=4" type="radio" name="img" id="r4">
+        <div class="slide s1">
+          <img src="images/slideshow/deal1.png" alt="1">
+        </div>
+        <div class="slide">
+          <img src="images/slideshow/corn.png" alt="2">
+        </div>
+        <div class="slide">
+          <img src="images/slideshow/deal2.png" alt="3">
+        </div>
+        <div class="slide">
+          <img src="images/slideshow/food.png" alt="4">
+        </div>
+			<div id="drinks"></div>
+      </div>
+      <div class="navigation">
+        <label for="r1" class="circles"></label>
+        <label for="r2" class="circles"></label>
+        <label for="r3" class="circles"></label>
+        <label for="r4" class="circles"></label>
+      </div>
+    </div>
+	<br><br><br>
+	<h1>Drinks</h1>
+	<div id="menu">
+		<img style="width:10%" id="myImg" class="img-fluid" src="images/menu/drinks/orange.png" alt="~Orange Juice~<br>$5.00<br>A good cure yarr thrist">
+		<img style="width:10%" id="myImg" class="img-fluid" src="images/menu/drinks/Lime.png" alt="~Lime Juice~<br>$3.00<br>A little drink to help with your scurvy">
+		<img style="width:10%" id="myImg" class="img-fluid" src="images/menu/drinks/Rum.png" alt="~Rum~<br>$1.60<br>Affordable rum, Pirates only">
+		<img style="width:10%" id="myImg" class="img-fluid" src="images/menu/drinks/Water.png" alt="~Water~<br>$4.00<br>Luxurious water from all 7 seas">
+	    <img style="width:10%" id="myImg" class="img-fluid" src="images/menu/drinks/CB.png" alt="~Cold Brew~<br>$4.70<br>Straight out of our barrels">
+
+	</div>
+	<br>
+	<div id="menu">
+		<img style="width:10%" id="myImg" class="img-fluid" src="images/menu/drinks/Caramel.png" alt="~Caramel Frappe~<br>$7.00<br>A little sweetness to top up that energy">
+		<img style="width:10%" id="myImg" class="img-fluid" src="images/menu/drinks/Pink.png" alt="~Berry Smoothie~<br>$4.50<br>Berry cold and refreshing smoothie">
+		<img style="width:10%" id="myImg" class="img-fluid" src="images/menu/drinks/CandC.png" alt="~Cookies & Cream Frappe~<br>$7.00<br>I mean who doesnt like Cookies and Cream">
+		<img style="width:10%" id="myImg" class="img-fluid" src="images/menu/drinks/GT.png" alt="~Seaweed Frappe~<br>$7.00<br>A little taste of the ocean">
+		<img style="width:10%" id="myImg" class="img-fluid" src="images/menu/drinks/Mango.png" alt="~Orange Smoothie~<br>$7.00<br>A good cure yarr thirst anddd heat stroke">
+	</div>
+	<div id="food"></div>
+	<h1>Food</h1>
+	<div id="menu">
+		<img style="width:10%" id="myImg" class="img-fluid" src="images/menu/food/Bread.png" alt="~Bread~<br>$3.35<br>Fresh out the oven baked in the poop deck.">
+		<img style="width:10%" id="myImg" class="img-fluid" src="images/menu/food/Muff.png" alt="~Muffins~<br>$2.40<br>If life's Tuffin, have a Muffin.">
+		<img style="width:10%" id="myImg" class="img-fluid" src="images/menu/food/Corn.png" alt="~Corn~<br>$4.50<br>Corn..., its just corn...">
+		<img style="width:10%" id="myImg" class="img-fluid" src="images/menu/food/Cheesecake.png" alt="~Cheesecakes~<br>$5.00<br>Taste like... Cheesecake">
+		<img style="width:10%" id="myImg" class="img-fluid" src="images/menu/food/Quacker.png" alt="~Quackers~<br>$5.60<br>Quack for the whole family, even the kids.">
+	</div>
+	<br>
+	<div id="menu">
+		<img style="width:10%" id="myImg" class="img-fluid" src="images/menu/food/Donut.png" alt="~Donuts~<br>$3.39<br>Do nut mess with us.">
+		<img style="width:10%" id="myImg" class="img-fluid" src="images/menu/food/Toasty.png" alt="~Toasties~<br>$6.60<br>Enjoyed by the famous Toast Malone.">
+		<img style="width:10%" id="myImg" class="img-fluid" src="images/menu/food/Parfait.png" alt="~Parfait~<br>$8.59<br>Yoghurt...but with layers">
+		<img style="width:10%" id="myImg" class="img-fluid" src="images/menu/food/Brownie.png" alt="~Brownies~<br>$4.20<br>They're just normal brownies i swear">
+		<img style="width:10%" id="myImg" class="img-fluid" src="images/menu/food/Sammy.png" alt="~Sandwiches~<br>$5.40<br>It's just a sammich.">
+	</div>
+	<br><br><br>
+	
+	<div id="myModal" class="modal">
+	  <span class="close">&times;</span>
+	  <img id="modal-img" class="modal-content"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQS2ol73JZj6-IqypxPZXYS3rRiPwKteoD8vezk9QsRdkjt3jEn&usqp=CAU">
+	  <div id="caption"></div>
+	</div>
+</div>
+<!--Bottom Nav Bar-->	
+<nav class="footer">
+<br>
+		<p>
+			© 2019 Yarrducks Coffee Company. All rights reserved.
+		</p>
+		<p>
+			By using this website you consent to our terms and conditions and user policy.
+		</p>
+		<br>
+		<p>
+			Find us on social media: 	  <a href="#"> <img src="images/socials.png" style="width:5%;"> </a>
+		</p>
+</nav>
+<script>
+	var modal = document.getElementById("myModal");
+	var modalImg = document.getElementById("modal-img");
+	var captionText = document.getElementById("caption");
+	captionText.innerHTML = this.alt;
+	document.addEventListener("click", (e) => {
+	  const elem = e.target;
+	  if (elem.id==="myImg") {
+		modal.style.display = "block";
+		modalImg.src = elem.dataset.biggerSrc || elem.src;
+		captionText.innerHTML = elem.alt; 
+	  }
+	})
+	var span = document.getElementsByClassName("close")[0];
+	span.onclick = function() { 
+	modal.style.display = "none";
+	}
+	var slideno = 1;
+	function autoscroll(){
+	document.getElementById("r"+slideno).checked = true;
+	slideno++;
+	if( slideno > 4){
+		slideno = 1;
+	}
+	setTimeout(autoscroll, 5000);
+	}
+</script>
+</body>
+</html>

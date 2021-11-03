@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<style>
+
+
+</style>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/css.css">
+	<title>YarrDucks</title>
+</head>
+<body id="body" onload="javascript:autoscroll()">
+<a href="index.html">
+<img class="logo" alt="topspice" src="images/yarrducks2.png" >
+</a>
+<header class="topnav">
+	<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a class="active" href="about.html">About Us</a></li>
+	<li><a href="rewards.html">Rewards</a></li>
+	<div class="dropdown">
+	
+		<button class="dropbtn">
+		
+		<a href="Menu.html">Menu ↓</a>
+		<i class="fa fa-caret-down"></i>
+		</button>
+		
+		<div class="dropdown-content">
+			<a href="#drinks">Drinks</a>
+			<a href="#food">Food</a>
+		</div>
+		
+     </div> 
+	<li><a href="order.html">Orders</a></li>
+	</ul>
+</header>
+
+<div id="divbody" class="maincontent" >
+<br><br><br><br>
+
+	<div class="row"> 
+	  <div class="column2">
+		<div class="nooverflow">
+			<iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=hamilton%20lake&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+			</iframe>
+		</div>
+	  </div>
+	  <div class="column2">
+		<div class="nooverflow">
+		<p class="title">
+			Contact Details
+		</p>
+		<div class="title">
+		Main Store:
+		</div>
+		<br>
+		Phone: 0888 7767870
+		<br>
+		Email: quack@gmail.com
+		<br>
+		Email: info@quack.co.nz
+		<br>
+		<br>
+		<p class="title">
+		Location
+		</p>
+		<div class="title">
+		Main Store:
+		</div>
+		<br>
+		2nd Pond District
+		<br>
+		Hamilton Lake 
+		<br>
+		Hamilton
+		</div>
+	  </div>
+	</div>
+	<br>
+	<div class="row"> 
+	  <div class="column2">
+		<div class="nooverflow">
+		
+			<p class="title">
+				Our Story
+			</p>
+			Our story began in 2020.
+			Back then we were invaded by a hoard of ducks, and much like how Australia lost to emus... we could not repel them.
+			Any retailer of whole bean and ground coffee, tea and spices surrendered willingly to the ducks as all who opposed them perished. 
+			Today, we are privileged to have our lives and still be able to sell our delicious coffee to the world (whilst under new management).
+			<br><br>
+			YarrDucks is named after the pirate ducks who are now our new overlords.
+			<br>
+			Our logo is also inspired by the sea – featuring a pirate duck which overthrew us all.
+		</div>
+	  </div>
+	  <div class="column2">
+		<div class="nooverflow">
+			<img src="images/shop.png" >
+		</div>
+	  </div>
+	</div>
+	
+</div>
+<!--Bottom Nav Bar-->	
+<nav class="footer">
+<br>
+		<p>
+			© 2019 Yarrducks Coffee Company. All rights reserved.
+		</p>
+		<p>
+			By using this website you consent to our terms and conditions and user policy.
+		</p>
+		<br>
+		<p>
+			Find us on social media: 	  <a href="#"> <img src="images/socials.png" style="width:5%;"> </a>
+		</p>
+</nav>
+<script>
+	var slideno = 1;
+	function autoscroll(){
+	document.getElementById("r"+slideno).checked = true;
+	slideno++;
+	if( slideno > 4){
+		slideno = 1;
+	}
+	setTimeout(autoscroll, 5000);
+	}
+</script>
+</body>
+</html>

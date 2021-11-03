@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/css.css">
+  </head>
+<body id="body" onload="javascript:autoscroll()">
+<a href="index.html">
+<img class="logo" alt="topspice" src="images/yarrducks2.png" >
+</a>
+<header class="topnav">
+	<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About Us</a></li>
+	<li><a class="active" href="rewards.html">Rewards</a></li>
+	<div class="dropdown">
+	
+		<button class="dropbtn">
+		
+		<a href="menu.html">Menu ↓</a>
+		<i class="fa fa-caret-down"></i>
+		</button>
+		
+		<div class="dropdown-content">
+			<a href="#drinks">Drinks</a>
+			<a href="#food">Food</a>
+		</div>
+		
+     </div> 
+	<li><a href="order.html">Orders</a></li>
+	</ul>
+</header>
+
+<div id="divbody" class="maincontent" >
+<br><br><br>
+<br><br><br>
+	<h2>Yarr Ducks Treasure Trove</h2>
+	<br><br><br>
+	<div id="menu">
+		<img style="width:10%" id="myImg" class="img-fluid" src="images/rewards/Bronze.png" alt="~Bronze Rewards~<br>Required Spend: $420<br>~Perks~<br>-1 free sip of pond water monthly<br>-1 cent off all orders<br>-1 free photo with the ducks each year">
+		<img style="width:10%" id="myImg" class="img-fluid" src="images/rewards/Silver.png" alt="~Silver Rewards~<br>Required Spend: $6900<br>~Perks~<br>-3 free sip of pond water monthly<br>-5 cents off all orders<br>-1 chance to feed the ducks each year">
+		<img style="width:10%" id="myImg" class="img-fluid" src="images/rewards/Gold.png" alt="~Gold Rewards~<br>Required Spend: $69420<br>~Perks~<br>-1 free glass of Rum monthly<br>-1 free packet of Quakers on every order<br>-1 day to hangout with the ducks each year">
+	</div>
+	<br>
+	<div id="myModal" class="modal">
+	  <span class="close">&times;</span>
+	  <img id="modal-img" class="modal-content"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQS2ol73JZj6-IqypxPZXYS3rRiPwKteoD8vezk9QsRdkjt3jEn&usqp=CAU">
+	  <div id="caption"></div>
+	</div>
+</div>
+<div id="divbody" class="maincontent" >
+	<div class="rowd">
+  <div class="columnd">
+    <h1>Bronze</h1>
+    <h1>Coin</h1>
+  </div>
+  <div class="columnd">
+    <h1>Silver</h1>
+    <h1>Coin</h1>
+  </div>
+  <div class="columnd">
+    <h1>Gold</h1>
+    <h1>Coin</h1>
+  </div>
+</div>
+<br><br><br><br><br><br>
+</div>
+<!--Bottom Nav Bar-->	
+<nav class="footer">
+<br>
+		<p>
+			© 2019 Yarrducks Coffee Company. All rights reserved.
+		</p>
+		<p>
+			By using this website you consent to our terms and conditions and user policy.
+		</p>
+		<br>
+		<p>
+			Find us on social media: 	  <a href="#"> <img src="images/socials.png" style="width:5%;"> </a>
+		</p>
+</nav>
+<script>
+	var modal = document.getElementById("myModal");
+	var modalImg = document.getElementById("modal-img");
+	var captionText = document.getElementById("caption");
+	captionText.innerHTML = this.alt;
+	document.addEventListener("click", (e) => {
+	  const elem = e.target;
+	  if (elem.id==="myImg") {
+		modal.style.display = "block";
+		modalImg.src = elem.dataset.biggerSrc || elem.src;
+		captionText.innerHTML = elem.alt; 
+	  }
+	})
+	var span = document.getElementsByClassName("close")[0];
+	span.onclick = function() { 
+	modal.style.display = "none";
+	}
+	
+</script>
+</body>
+</html>

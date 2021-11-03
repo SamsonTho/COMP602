@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<style>
+
+
+</style>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/css.css">
+	<title>YarrDucks</title>
+</head>
+<body id="body" onload="javascript:autoscroll()">
+<a href="index.html">
+<img class="logo" alt="topspice" src="images/yarrducks2.png" >
+</a>
+<header class="topnav">
+	<ul>
+	<li><a class="active" href="index.html">Home</a></li>
+	<li><a href="about.html">About Us</a></li>
+	<li><a href="rewards.html">Rewards</a></li>
+	<div class="dropdown">
+	
+		<button class="dropbtn">
+		
+		<a href="menu.html">Menu ↓</a>
+		<i class="fa fa-caret-down"></i>
+		</button>
+		
+		<div class="dropdown-content">
+			<a href="#drinks">Drinks</a>
+			<a href="#food">Food</a>
+		</div>
+		
+     </div> 
+	<li><a href="order.html">Orders</a></li>
+	</ul>
+</header>
+
+<div id="divbody" class="maincontent" >
+<br><br><br><br>
+    <div class="slidershow middle">
+      <div class="slides">
+        <input oninput="slideno=1" type="radio" name="img" id="r1">
+        <input oninput="slideno=2" type="radio" name="img" id="r2">
+        <input oninput="slideno=3" type="radio" name="img" id="r3">
+        <input oninput="slideno=4" type="radio" name="img" id="r4">
+        <div class="slide s1">
+          <img src="images/slideshow/coffee.png" alt="1">
+        </div>
+        <div class="slide">
+          <img src="images/slideshow/coffee2.png" alt="2">
+        </div>
+        <div class="slide">
+          <img src="images/slideshow/coffee3.png" alt="3">
+        </div>
+        <div class="slide">
+          <img src="images/slideshow/coffee4.png" alt="4">
+        </div>
+      </div>
+      <div class="navigation">
+        <label for="r1" class="circles"></label>
+        <label for="r2" class="circles"></label>
+        <label for="r3" class="circles"></label>
+        <label for="r4" class="circles"></label>
+      </div>
+    </div>
+	<div class="row"> 
+	  <div class="column2">
+	  <a href="rewards.html">
+		<div class="nooverflow">
+			<img src="images/gallery/Yarrcoins.png" >
+		</div>
+	  </a>
+	  </div>
+	  <div class="column">
+	  <a href="Menu.html">
+		<div class="nooverflow">
+			<img src="images/gallery/bag.png" >
+		</div>
+	  </a>
+	  </a>
+	  <a href="Menu.html">
+		<div class="nooverflow">
+			<img src="images/gallery/lid.png" >
+		</div>
+	  </a>
+	  </div>
+	  <div class="column">
+	  <a href="Menu.html">
+		<div class="nooverflow">
+			<img src="images/gallery/quacker1.png" >
+		</div>
+	  </a>
+	  <a href="Menu.html">
+		<div class="nooverflow">
+			<img src="images/gallery/foam.png" >
+		</div>
+	  </a>
+	  </div>
+	</div>
+
+</div>
+<!--Bottom Nav Bar-->	
+<nav class="footer">
+<br>
+		<p>
+			© 2019 Yarrducks Coffee Company. All rights reserved.
+		</p>
+		<p>
+			By using this website you consent to our terms and conditions and user policy.
+		</p>
+		<br>
+		<p>
+			Find us on social media: 	  <a href="#"> <img src="images/socials.png" style="width:5%;"> </a>
+		</p>
+</nav>
+<script>
+	var slideno = 1;
+	function autoscroll(){
+	document.getElementById("r"+slideno).checked = true;
+	slideno++;
+	if( slideno > 4){
+		slideno = 1;
+	}
+	setTimeout(autoscroll, 5000);
+	}
+</script>
+</body>
+</html>
